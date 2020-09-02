@@ -119,6 +119,10 @@
             margin-bottom: 0;
         }
 
+        .zoom:hover {
+        transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+
     </style>
 
     <title>Hanif Al Fathoni | Personal Page</title>
@@ -149,8 +153,10 @@
         <section id="jumbotron pb-4">
             <div class="jumbotron jumbotron-fluid" style="background-image: url(/images/jumbotron-bg.jpg);">
                 <div class="container text-center">
-                    <img class="img-thumbnail rounded-circle" src="/images/profile.jpg" width="25%" alt="Hanif Al Fathoni photo profile">
-                    <h1 class="display-4" style="color: white;">Hanif Al Fathoni</h1>
+                    <div class="zoom pb-4">
+                        <img class="img-thumbnail rounded-circle img-fluid" src="/images/profile.jpg" width="25%" alt="Hanif Al Fathoni photo profile">
+                    </div>
+                    <h1 class="display-4 pt-4" style="color: white;">Hanif Al Fathoni</h1>
                     <p class="lead" style="color: white;">Student | Dreamer | Programmer soon</p>
                 </div>
             </div>
