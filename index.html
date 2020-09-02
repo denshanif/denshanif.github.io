@@ -115,13 +115,17 @@
             background-color: #6bd079;
         }
 
+        .jumbotron {
+            margin-bottom: 0;
+        }
+
     </style>
 
     <title>Hanif Al Fathoni | Personal Page</title>
   </head>
   <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg sticky-top navbar-dark py-1" style="background-color: #112d4e;">
+        <nav class="navbar navbar-expand-md sticky-top navbar-dark py-1" style="background-color: #112d4e;">
             <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="/images/web-logo.png" width="60" height="60" class="d-inline-block align-center" alt="Denshanif web logo">
@@ -142,19 +146,21 @@
     </header>
 
     <main>
-        <div class="jumbotron jumbotron-fluid" style="background-image: url(/images/jumbotron-bg.jpg);">
-            <div class="container text-center">
-                <img class="img-thumbnail rounded-circle" src="/images/profile.jpg" width="25%" alt="Hanif Al Fathoni photo profile">
-                <h1 class="display-4" style="color: white;">Hanif Al Fathoni</h1>
-                <p class="lead" style="color: white;">Student | Dreamer | Programmer soon</p>
+        <section id="jumbotron pb-4">
+            <div class="jumbotron jumbotron-fluid" style="background-image: url(/images/jumbotron-bg.jpg);">
+                <div class="container text-center">
+                    <img class="img-thumbnail rounded-circle" src="/images/profile.jpg" width="25%" alt="Hanif Al Fathoni photo profile">
+                    <h1 class="display-4" style="color: white;">Hanif Al Fathoni</h1>
+                    <p class="lead" style="color: white;">Student | Dreamer | Programmer soon</p>
+                </div>
             </div>
-        </div>
+        </section>
     
-        <section id="about">
+        <section id="about" class="bg-light pt-4 pb-4">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg mx-auto text-center">
-                        <h1 style="color: #112d4e;">About Me</h1>
+                        <h1 class="pb-4" style="color: #112d4e;">About Me</h1>
                         <div class="card mx-auto" style="width: auto;">
                             <div class="card-body">
                                 <h3 class="card-title">Hi!</h3>
@@ -168,18 +174,12 @@
                 </div>
             </div>
         </section>
-    
-        <section id="page-divider1">
-            <div class="mb-4">
-                <hr class="solid">
-            </div>
-        </section>
-    
-        <section id="internship">
+
+        <section id="internship" class="bg-light pb-4">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg mx-auto text-center">
-                        <h1 style="color: #112d4e;">Internship Experience</h1>
+                        <h1 class="pb-4" style="color: #112d4e;">Internship Experience</h1>
                         <div class="card mx-auto" style="width: auto;">
                             <div class="card-body">
                                 <h3 class="card-title">IT Help Desk Intern</h3>
@@ -195,18 +195,12 @@
             </div>
         </section>
 
-        <section id="page-divider2">
-            <div class="mb-4">
-                <hr class="solid">
-            </div>
-        </section>
-
-        <section id="education">
+        <section id="education" class="bg-light pb-4">
             <div class="container-fluid">
-                <h1 class="text-center" style="color: #112d4e;">Education</h1>
                 <div class="row">
                     <div class="col-lg mx-auto text-center">
-                        <div class="card mx-auto">
+                        <h1 class="pb-4" style="color: #112d4e;">Education</h1>
+                        <div class="card mx-auto" style="width: auto;">
                             <div class="card-body">
                                 <div class="container">
                                     <h3 class="card-title">Network & Computer Engineering</h3>
@@ -225,17 +219,11 @@
             </div>
         </section>
 
-        <section id="page-divider3">
-            <div class="mb-4">
-                <hr class="solid">
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container-fluid mb-5">
-                <h1 class="text-center" style="color: #112d4e;">Contact Me</h1>
+        <section id="contact" class="bg-light pb-4">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg mx-auto text-center">
+                    <div class="col-lg mx-auto text-center">         
+                        <h1 class="pb-4" style="color: #112d4e;">Contact Me</h1>
                         <div class="card mx-auto">
                             <div class="card-body">
                                 <div class="container">
@@ -256,12 +244,14 @@
         </section>
     </main>
 
-    <footer class="footer py-3">
-        <div class="footer mx-auto text-center fixed-bottom" style="background-color: #112d4e; color: white">
-            <div class="container">
-                <p class="align-items-center">Develop with 💙 by Hanif Al Fathoni © 2020 - 2021 · Build with © Bootstrap</p>
+    <footer>
+        <section>
+            <div class="footer mx-auto" style="background-color: #112d4e; color: white;">
+                <div class="text-center py-2">
+                    <p>Develop with 💙 by <a href="#">Hanif Al Fathoni</a> · Build with © Bootstrap</p>
+                </div>
             </div>
-        </div>
+        </section>
     </footer>
 
 
